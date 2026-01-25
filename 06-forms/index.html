@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Practice</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Basic Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Minimum 8 Character" minlength="8" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Personal Details</legend>
+                <p>Gender:</p>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="others" name="gender" value="others">
+                    <label for="others">Others</label>
+                <p>Skills:</p>
+                    <input type="checkbox" id="html" name="skills[]" value="html">
+                    <label for="html">HTML</label><br>
+                    <input type="checkbox" id="css" name="skills[]" value="css">
+                    <label for="css">CSS</label><br>
+                    <input type="checkbox" id="js" name="skills[]" value="js">
+                    <label for="js">JavaScript</label>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Information</legend>
+                <label for="age">AGE:</label>
+                <input type="number" id="age" name="age" min="1" max="100" placeholder="Age"><br>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required><br>
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" name="resume"><br>
+                <label for="country">Choose your Country:</label>
+                <select name="country" id="country" required>
+                    <option value="" disabled selected>Select Your Country</option>
+                    <option value="india">India</option>
+                    <option value="japan">Japan</option>
+                    <option value="usa">USA</option>
+                    <option value="canada">Canada</option>
+                    <option value="uk">UK</option>
+                </select><br>
+               <input type="checkbox" id="terms" name="terms" required>
+               <label for="terms">I agree to the terms and conditions</label>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
